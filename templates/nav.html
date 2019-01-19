@@ -1,0 +1,35 @@
+{% include 'include_css_js.html' %}
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <span>
+                        <a href="{{ url_for('.index') }}"><img alt="image" class="img-circle" src="static/img/HDD_Icon.png" /></a>
+                    </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">DCMS</strong>
+                            </span> 
+                            <span class="text-muted text-xs block">DCMS </b></span>
+                        </span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="{{ url_for('.index') }}"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
+            </li>
+            <li>
+                <a href="{{ url_for('.upload') }}"><i class="fa fa-upload"></i> <span class="nav-label">menu1</span></span></a>
+            </li>
+            <li>
+                <a href="{{ url_for('.incomplete_list') }}"><i class="fa fa-tasks"></i> <span class="nav-label">menu2</span></span></a>
+            </li>
+            <li>
+                <a href="{{ url_for('.complete_list') }}"><i class="fa fa-tasks"></i> <span class="nav-label">menu3</span></span></a>
+            </li>
+        </ul>
+    </div>
+</nav>

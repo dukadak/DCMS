@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>DMS: Disk Management System</title>
+
+        {% include 'include_css_js.html' %}
+        <!-- plotly lib -->
+        <script src="/static/js/plotly-latest.min.js"></script>
+
+        <!-- d3.js v4 -->
+        <script src="/static/js/d3.js"></script>
+        <script src="/static/js/d3.min.js"></script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            {% include 'nav.html' %}
+            
+            <div id="page-wrapper" class="gray-bg">
+                <!-- <div class="row border-bottom">
+                    <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                        <div class="navbar-header">
+                            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                            <form role="search" class="navbar-form-custom" action="search_results.html">
+                                <div class="form-group">
+                                <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                                </div>
+                            </form>
+                        </div>
+                    </nav>
+                </div> -->
+                <div class="wrapper wrapper-content">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <!-- <span class="label label-success pull-right">Monthly</span> -->
+                                    <a href="#" style="color: black">
+                                        <h5>제목</h5>
+                                    </a>
+                                </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">
+                                    for loop
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <!-- <span class="label label-info pull-right">Annual</span> -->
+                                <a href="#" style="color: black">
+                                    <h5>제목2</h5>
+                                </a>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">
+                                    for loop
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <!-- <span class="label label-primary pull-right">Today</span> -->
+                                <a href="#" style="color: black">
+                                    <h5>제목3</h5>
+                                </a>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">
+                                    for loop
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <!-- <span class="label label-danger pull-right">Low value</span> -->
+                                <a href="#" style="color: black">
+                                    <h5>제목4</h5>
+                                </a>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">
+                                    for loop
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>제목5</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <div id="percent-chart">
+                                    chart
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>제목6</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <div id="chart">
+                                    chart2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% include 'footer.html' %}
+            </div>
+        </div>
+    </body>
+</html>
