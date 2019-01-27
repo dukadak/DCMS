@@ -3,7 +3,7 @@ from flask import Flask, Blueprint, render_template, url_for
 page = Blueprint('page', __name__, template_folder='templates')
 
 @page.route('/assets')
-def show():
+def assets():
     return render_template('assets.html')
 
 @page.route('/add_assets')
