@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>DCMS: Assets</title>
+        <title>DCMS: Adding Assets</title>
 
         {% include 'include_css_js.html' %}
         <!-- plotly lib -->
@@ -22,19 +22,17 @@
                         <div class="col-lg-3">
                             <div class="ibox float-e-margins">
                                 <div class="ibox-title">
-                                    <!-- <span class="label label-success pull-right">Monthly</span> -->
-                                    <a href="#" style="color: black">
-                                        <h5>자산 정보 입력</h5>
-                                        <a href="{{ url_for('page.assets') }}">취소</a>
-                                        <form action="/post" method="post">
-                                            <p>테스트 : <input type="text" name="test"></p>
-                                            <input type="submit" value="정보 넘기기">
-                                        </form>
-                                    </a>
+                                    <h5>자산 정보 입력</h5>
+                                    <p><a href="{{ url_for('page.assets') }}">취소</a></p>
                                 </div>
                             <div class="ibox-content">
                                 <h1 class="no-margins">
-                                    내용
+                                    <form action="/assets" method="post">
+                                        <p>이름: <input type="text" name="asset_name" required></p>
+                                        <p>S/N: <input type="text" name="asset_serial_num" required></p>
+                                        <p>수량: <input type="text" name="asset_count" required></p>
+                                        <input type="submit" value="자산 등록">
+                                    </form>
                                 </h1>
                             </div>
                         </div>

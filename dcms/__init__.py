@@ -1,7 +1,15 @@
 from flask import Flask, render_template
-from dcms.views import view
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+
+# database
+app.config.from_object('config')
+db = SQLAlchemy(app)
+from dcms import models
+
+# view
+from dcms.views import view
 app.register_blueprint(view.page)
 
 @app.errorhandler(404)

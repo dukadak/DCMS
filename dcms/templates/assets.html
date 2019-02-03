@@ -22,13 +22,19 @@
                         <div class="col-lg-3">
                             <div class="ibox float-e-margins">
                                 <div class="ibox-title">
-                                    <!-- <span class="label label-success pull-right">Monthly</span> -->
-                                        <h5>자산 추가</h5>
-                                        <li role="presentation"><a href="{{ url_for('page.add_assets') }}">ADD</a></li>
+                                        <h5>자산 목록</h5>
+                                        <li role="presentation"><a href="{{ url_for('page.add_assets') }}">자산 추가</a></li>
                                 </div>
                             <div class="ibox-content">
                                 <h1 class="no-margins">
-                                    내용
+                                    {% for item in assets %}
+                                        <p>
+                                            {{ item.num }}
+                                            {{ item.asset_name }}
+                                            {{ item.serial_num }}
+                                            {{ item.count }}
+                                        </p>
+                                    {% endfor %}
                                 </h1>
                             </div>
                         </div>
