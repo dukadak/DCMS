@@ -1,0 +1,1 @@
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://dev-sonkadak:dev-sonkadak@127.0.0.1/dcms?charset=utf8'
