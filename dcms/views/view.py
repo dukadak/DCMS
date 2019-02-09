@@ -1,8 +1,13 @@
-from flask import Flask, Blueprint, render_template, url_for, request
+from flask import Blueprint, render_template, url_for, request
 from dcms.models import Assets
 from dcms import db
 
 page = Blueprint('page', __name__, template_folder='templates')
+
+# index page
+@page.route('/')
+def index():
+    return render_template('index.html')
 
 # page for listing assets
 @page.route('/assets', methods=['GET', 'POST'])
