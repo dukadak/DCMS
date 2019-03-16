@@ -1,4 +1,4 @@
-SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://dev-sonkadak:dev-sonkadak@127.0.0.1/dcms?charset=utf8'
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://sonkadak:test@127.0.0.1/dcms?charset=utf8'
 # DB Connection Info
 # class dbConn_info:
 #     dbHost = '127.0.0.1'
